@@ -22,4 +22,4 @@ def getWeather(date:str, time:str, autoBack=True) -> dict:
 if __name__ == '__main__':
     import time
     date = time.strftime("%Y%m%d", time.localtime(time.time()))
-    print(getWeather('20240308', '1900'))#date, '0600'))
+    print(getWeather('20240310', '0000'))#date, '0600'))

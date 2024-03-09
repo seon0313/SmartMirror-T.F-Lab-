@@ -47,9 +47,9 @@ class WeatherWidget(Widget):
         # SKY: 맑음(1), 구름많음(3), 흐림(4)
         # PTY: 없음(0), 비(1), 비/눈(2), 눈(3), 빗방울(5), 빗방울눈날림(6), 눈날림(7)
         sky = {'1': '맑음', '3': '구름 많음', '4': '흐림'}
-        pty = {'0': None, '1': '비', '2': '눈비', '3': '눈', '5': '빗방울', '6': '빗방울과 눈날림', '7': '눈날림'}
+        pty = {'0': '', '1': '비  ', '2': '눈비  ', '3': '눈  ', '5': '빗방울  ', '6': '빗방울과 눈날림  ', '7': '눈날림  '} # 0: None
         if self.weather != None:
-            self.a.text = f'{self.weather["T1H"]}℃|습도: {self.weather["REH"]}%|{pty[self.weather["PTY"]]}|풍속: {self.weather["WSD"]}m/s'
+            self.a.text = f'{self.weather["T1H"]}℃  습도: {self.weather["REH"]}%  {pty[self.weather["PTY"]]}풍속: {self.weather["WSD"]}m/s'
 
         self.a.blit(sf, size[0] / 2, size[1] / 2)
 
