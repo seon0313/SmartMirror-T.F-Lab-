@@ -49,11 +49,11 @@ class App:
 
         clock = Clock(self.getFont('clock-font-size'),(255,255,255))
 
-        weather_widget = WeatherWidget(self.fonts[20], self.fonts[15])
-        news_widget = NewsWidget(self.fonts[20],self.fonts[15])
+        weather_widget = WeatherWidget(self.fonts[self.theme['big-font-size']], self.fonts[self.theme['small-font-size']])
+        news_widget = NewsWidget(self.fonts[self.theme['big-font-size']],self.fonts[self.theme['small-font-size']])
 
-        bottom_widget = WidgetUI(size[0], 50, WidgetType.Static, [news_widget])
-        center_small_widget = WidgetUI(size[0]/3, 30, WidgetType.Static, [weather_widget])
+        bottom_widget = WidgetUI(size[0], self.theme['big-font-size']+self.theme['small-font-size']+5, WidgetType.Static, [news_widget])
+        center_small_widget = WidgetUI(size[0]/2, self.theme['big-font-size'], WidgetType.Static, [weather_widget])
 
         while True:
             t = time.time()
@@ -69,7 +69,7 @@ class App:
 
             center_small_widget.blit(self.sc,size[0]/2,size[1]/2+self.theme['clock-font-size']/2)
             w = bottom_widget.w
-            bottom_widget.blit(self.sc, size[0]/2, size[1]-(30/2))
+            bottom_widget.blit(self.sc, size[0]/2, size[0]-bottom_widget.h)
 
             if self.setting['dev']:
                 text = Text(self.getFont('dev-font-size'), f'fps: {self.clock.get_fps()}', (255,255,255))
