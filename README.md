@@ -1,1 +1,0 @@
-# SmartMirror [T.F-Lab]
