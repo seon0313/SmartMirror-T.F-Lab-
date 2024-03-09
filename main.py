@@ -29,7 +29,7 @@ class App:
 
         self.clock: pygame.time.Clock = pygame.time.Clock()
 
-        font_sizes = [20,15]
+        font_sizes = []
         self.fonts: dict[pygame.font.Font] = {}
 
         for i in self.theme.keys():
