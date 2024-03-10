@@ -4,7 +4,6 @@
 
 def getHotNews() -> list:
     from bs4 import BeautifulSoup
-    import requests
 
     import urllib3
     from urllib3.util.ssl_ import create_urllib3_context

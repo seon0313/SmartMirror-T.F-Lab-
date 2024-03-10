@@ -1,5 +1,8 @@
 {
   "fps": 60,
   "time-24-12": 12,
-  "dev": false
+  "dev": false,
+  "api": {
+    "weather": ""
+  }
 }

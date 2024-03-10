@@ -1,9 +1,9 @@
 def getWeather(date:str, time:str, autoBack=True) -> dict:
     from requests import get
     from json import loads
-
+    from m.App import App
     url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst'
-    params = {'serviceKey': 'aw7+koT3adsGpmc+bzBStXgovpjHc5o0PloNaboW0j2l5c1dUF8YhF/YFRStbB6uRDJ1unDI8v3vXH4WRP746Q==', 'dataType': 'JSON', 'base_date': date,
+    params = {'serviceKey': App.setting['api']['weather'], 'dataType': 'JSON', 'base_date': date,
               'base_time': time, 'nx': '55', 'ny': '127'}
     response = get(url, params=params,timeout=2)
     print(response.content.decode('utf8'))
