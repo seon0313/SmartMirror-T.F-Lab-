@@ -11,7 +11,6 @@ import threading
 class NewsWidget(Widget):
     def __init__(self):
         super().__init__()
-        from m.App import App
         self.data: list[dict] = None
         self.load = False
         self.sf: pygame.Surface = None
