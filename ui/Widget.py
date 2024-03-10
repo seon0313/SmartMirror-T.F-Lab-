@@ -2,11 +2,12 @@ import pygame
 
 
 class Widget:
-    def __init__(self, font: pygame.font.Font, small_font: pygame.font.Font):
+    def __init__(self):
         from uuid import uuid4
+        from m.App import App
         self.id = uuid4()
-        self.font = font
-        self.small_font = small_font
+        self.font = App.getFont('big-font-size')
+        self.small_font = App.getFont('small-font-size')
 
     def run(self, rect) -> pygame.Surface:
         sf = pygame.Surface(rect)

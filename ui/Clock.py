@@ -3,9 +3,10 @@ from ui.Text import Text
 import threading
 
 class Clock:
-    def __init__(self,font: pygame.font.Font, color: tuple | pygame.Color, time_format=12):
-        self.font = font
-        self.color = color
+    def __init__(self, time_format=12):
+        from m.App import App
+        self.font = App.getFont('clock-font-size')
+        self.color = App.theme['clock-color']
         self.time = time.time()
         self.format = time_format
 

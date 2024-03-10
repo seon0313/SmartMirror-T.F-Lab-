@@ -1,6 +1,7 @@
 {
   "background-color": [0,0,0],
   "logo-color": [255,255,255],
+  "clock-color": [255,255,255],
   "time-font-size": 50,
   "clock-font-size": 200,
   "dev-font-size": 20,

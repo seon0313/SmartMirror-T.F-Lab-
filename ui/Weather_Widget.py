@@ -8,8 +8,8 @@ import threading
 
 
 class WeatherWidget(Widget):
-    def __init__(self, font: pygame.font.Font, small_font: pygame.font.Font):
-        super().__init__(font, small_font)
+    def __init__(self):
+        super().__init__()
 
         self.weather: dict = None
         self.load = False
