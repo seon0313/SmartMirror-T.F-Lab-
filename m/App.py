@@ -6,11 +6,13 @@ from ui.Clock import Clock
 from ui.Widget import WidgetUI, WidgetType
 from ui.Weather_Widget import WeatherWidget
 from ui.News_Widget import NewsWidget
+from ui.Background import Background
 
 class App:
     theme: dict
     fonts: dict
     setting: dict
+    dt: int
     def __init__(self):
         pygame.init()
 
@@ -47,7 +49,7 @@ class App:
         return App.fonts[App.theme[theme]]
 
     def run(self):
-        dt = 1/App.setting['fps']
+        App.dt = 1/App.setting['fps']
         size = self.sc.get_size()
 
         clock = Clock(time_format=App.setting['time-24-12'])
@@ -58,6 +60,8 @@ class App:
         bottom_widget = WidgetUI(size[0], App.theme['big-font-size']+App.theme['small-font-size'], WidgetType.Static, [news_widget])
         center_small_widget = WidgetUI(size[0]/2, App.theme['big-font-size'], WidgetType.Static, [weather_widget])
 
+        background = Background(self.sc)
+
         while True:
             t = time.time()
             for i in pygame.event.get():
@@ -67,6 +71,8 @@ class App:
 
             self.sc.fill(App.theme['background-color'])
 
+            background.blit()
+
             size = self.sc.get_size()
             clock.blit(self.sc,size[0]/2,size[1]/2)
 
@@ -74,9 +80,9 @@ class App:
             bottom_widget.blit(self.sc, size[0]/2, size[1]-bottom_widget.h)
 
             if App.setting['dev']:
-                text = Text(self.getFont('dev-font-size'), f'fps: {self.clock.get_fps()}', (255,255,255))
+                text = Text(App.getFont('dev-font-size'), f'fps: {self.clock.get_fps()}', (255,255,255))
                 text.blit(self.sc,10,10,1,1)
 
             pygame.display.flip()
             self.clock.tick(App.setting['fps'])
-            dt = time.time()-t
+            App.dt = time.time()-t

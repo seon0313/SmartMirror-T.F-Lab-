@@ -31,7 +31,7 @@ class Clock:
 
 
 
-        sf = pygame.Surface((self.hour_r.w+self.minute_r.w+self.sec_r.w, self.hour_r.h))
+        sf = pygame.Surface((self.hour_r.w+self.minute_r.w+self.sec_r.w, self.hour_r.h), pygame.SRCALPHA)
         sf_r = sf.get_rect()
         sf_r.center = (x,y)
 

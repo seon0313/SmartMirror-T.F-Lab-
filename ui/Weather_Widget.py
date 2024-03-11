@@ -24,7 +24,7 @@ class WeatherWidget(Widget):
         print('Getting')
 
     def run(self, rect) -> pygame.Surface:
-        sf = pygame.Surface(rect)
+        sf = pygame.Surface(rect, pygame.SRCALPHA)
 
         size = sf.get_size()
 

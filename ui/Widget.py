@@ -10,7 +10,7 @@ class Widget:
         self.small_font = App.getFont('small-font-size')
 
     def run(self, rect) -> pygame.Surface:
-        sf = pygame.Surface(rect)
+        sf = pygame.Surface(rect, pygame.SRCALPHA)
         return sf
 
     def getFun(self): return self.function
@@ -24,7 +24,7 @@ class WidgetUI:
         self.focus: int = 0
         self.time = 0
     def blit(self, surface: pygame.Surface, x: float, y: float, background: pygame.Surface | None = None):
-        sf = pygame.Surface((self.w,self.h))
+        sf = pygame.Surface((self.w,self.h), pygame.SRCALPHA)
         if background != None:
             sf.blit(background, (0,0))
         try:

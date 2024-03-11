@@ -26,7 +26,7 @@ class NewsWidget(Widget):
         self.load = False
 
     def run(self, rect) -> pygame.Surface:
-        self.sf = pygame.Surface(rect)
+        self.sf = pygame.Surface(rect, pygame.SRCALPHA)
         size = self.sf.get_size()
 
         if self.data == None and not self.load:
@@ -47,6 +47,5 @@ class NewsWidget(Widget):
 
             height = self.news_title.getRect().h
             self.source_by.blit(self.sf,size[0]/2,height,vertical=1)
-
 
         return self.sf
