@@ -38,4 +38,12 @@
 
 README.md의 내용들은 추후 알아보기 쉽도록 단어 및 문장을 수정할 예정입니다.
 
-T.F Lab - 추윤선
+***
+
+LICENSE
+
+Apache-2.0 license
+
+사용시 저작권 고지 필수
+
+개발: T.F Lab - 추윤선
