@@ -8,8 +8,8 @@ class Dust:
         self.surface:pygame.Surface = surface
         self.size = self.surface.get_size()
         import random
-        self.max = random.randint(60,int(self.size[1]/2))
-        self.min = random.randint(60, self.max)
+        self.max = random.randint(int(self.size[1]/4),int(self.size[1]/2))
+        self.min = random.randint(int(self.size[1]/4), self.max)
         self.s = random.randint(self.min, self.max)
         self.pos = [random.randint(1,self.size[0]),random.randint(1,self.size[1])]
         self.x = random.randint(10,25)
