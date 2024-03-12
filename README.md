@@ -109,4 +109,8 @@ Apache-2.0 license
 
 사용시 저작권 고지 필수
 
+T.F Lab의 로고는 모두 T.F Lab 동아리에 있습니다.
+
+Apache-2.0 license가 적용되는 것은 소스코드에 한정됩니다.
+
 개발: T.F Lab - 추윤선
