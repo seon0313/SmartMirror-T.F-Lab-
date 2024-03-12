@@ -4,6 +4,27 @@
 
 ***
 
+## 목차
+
+* [개요](#개요)
+* [사용한 라이브러리 / 자산](#사용한-라이브러리-/-자산)
+* [기능](#기능)
+* [설치](#설치)
+* [초기설정](#초기설정)
+* [라이센스](#LICENSE)
+
+***
+
+## 개요
+
+T.F Lab의 스마트미러 하드웨어에 탑재될 소프트웨어.
+
+개발환경: Windows 11
+
+실행환경: Ubuntu 23.10
+
+***
+
  ## 사용한 라이브러리 / 자산
 
  * 경기천년체
@@ -11,12 +32,27 @@
  * Json
  * Time
  * Threading
- * BeautifulSoup
+ * BeautifulSoup 4
  * urllib3
  * html5lib
 
  * 뉴스소스: 연합뉴스
  * 기상소스: 기상청 API
+
+### SmartMirror - T.F Lab은 자체 제작 라이브러리로 UI를 구연합니다.
+ * m.App.py // 프로그램 메인 클래스
+ * m.News.py // 뉴스(연합뉴스) 크롤링 모듈
+ * m.NowPlaying.py // 현재 재생중인 미디어(영상, 음악)의 정보를 받아오는 모듈
+ * m.Weather.py // 기상청 API 모듈
+ * particle.Dust.py // 배경화면의 색상 오브젝트
+ * particle.Particle.py // 다양한 Particle 오브젝트의 기반이 되는 모듈
+ * ui.Alert.py // 알람 시스템의 UI
+ * ui.Background.py // 백그라운드 시스템의 UI
+ * ui.Clock.py // 시계
+ * ui.News_Widget.py // 뉴스 위젯
+ * ui.Text.py // 텍스트 UI
+ * ui.Weather_Widget.py // 날씨 위젯
+ * ui.Widget.py // 위젯 UI
 
 ***
 
@@ -31,6 +67,33 @@
 
 ***
 
+## 설치
+설치가 필요한 라이브러리는 다음과 같습니다.
+
+python-ce, beautifulsoup4, html5lib, urllib3
+
+다음 명령어로 라이브러리를 설치할수있습니다.
+
+```
+pip install <라미브러리 명>
+pip3 install <라이브러리 명>
+python -m pip install <라이브러리 명>
+python3 -m pip isntall <라이브러리 명>
+
+#예)
+pip install pygame-ce
+```
+
+깃허브에서 모든 소스를 다운로드 합니다.
+
+소스를 압축해제 후 해제된 폴더에서 main.py를 실행합니다.
+
+main.py를 더블클릭하여 실행하거나 CMD 또는 터미널에서 다음과 같은 명령어로 실행합니다.
+```
+python main.py
+```
+명령어로 실행시 CD 명령어를 이용해 압축해제한 폴더로 이동후 위 명령어를 실행해 주세요.
+
 ## 초기설정
 1. 날씨 위젯을 사용하기 위해서는 setting.json에서 api > weather의 값을 기상청 초단기예보 api key로 설정
 
@@ -40,7 +103,7 @@ README.md의 내용들은 추후 알아보기 쉽도록 단어 및 문장을 수
 
 ***
 
-LICENSE
+## LICENSE
 
 Apache-2.0 license
 
