@@ -43,19 +43,21 @@ T.F Lab의 스마트미러 하드웨어에 탑재될 소프트웨어.
  * 기상소스: 기상청 API
 
 ### SmartMirror - T.F Lab은 자체 제작 라이브러리로 UI를 구연합니다.
- * m.App.py // 프로그램 메인 클래스
- * m.News.py // 뉴스(연합뉴스) 크롤링 모듈
- * m.NowPlaying.py // 현재 재생중인 미디어(영상, 음악)의 정보를 받아오는 모듈
- * m.Weather.py // 기상청 API 모듈
- * particle.Dust.py // 배경화면의 색상 오브젝트
- * particle.Particle.py // 다양한 Particle 오브젝트의 기반이 되는 모듈
- * ui.Alert.py // 알람 시스템의 UI
- * ui.Background.py // 백그라운드 시스템의 UI
- * ui.Clock.py // 시계
- * ui.News_Widget.py // 뉴스 위젯
- * ui.Text.py // 텍스트 UI
- * ui.Weather_Widget.py // 날씨 위젯
- * ui.Widget.py // 위젯 UI
+ | 파일 | 설명 |
+ | --- | --- |
+ | m.App.py | 프로그램 메인 클래스 |
+ | m.News.py | 뉴스(연합뉴스) 크롤링 모듈 |
+ | m.NowPlaying.py | 현재 재생중인 미디어(영상, 음악)의 정보를 받아오는 모듈 |
+ | m.Weather.py | 기상청 API 모듈 |
+ | particle.Dust.py | 배경화면의 색상 오브젝트 |
+ | particle.Particle.py | 다양한 Particle 오브젝트의 기반이 되는 모듈 |
+ | ui.Alert.py | 알람 시스템의 UI |
+ | ui.Background.py | 백그라운드 시스템의 UI |
+ | ui.Clock.py | 시계 |
+ | ui.News_Widget.py | 뉴스 위젯 |
+ | ui.Text.py | 텍스트 UI |
+ | ui.Weather_Widget.py | 날씨 위젯 |
+ | ui.Widget.py | 위젯 UI |
 
 ***
 
