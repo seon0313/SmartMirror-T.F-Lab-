@@ -1,5 +1,7 @@
 # T.F Lab 정기/단체 프로젝트 Smart Mirror 소프트웨어
 
+![T.F Lab](/i/tf_dot_text_logo.svg)
+
 개발 - 추윤선
 
 ***
@@ -27,6 +29,7 @@ T.F Lab의 스마트미러 하드웨어에 탑재될 소프트웨어.
 
  ## 사용한 라이브러리 / 자산
 
+ * Python 3.12
  * 경기천년체
  * Pygame -> Pygame-CE (pygame - Comunity Edition) # Blur 기능을 위하여 변경
  * Json
@@ -68,6 +71,10 @@ T.F Lab의 스마트미러 하드웨어에 탑재될 소프트웨어.
 ***
 
 ## 설치
+Python 3를 다운로드 합니다.
+권장: Python 3.6 >=
+테스트 됨: Python 3.12, Python 3.12.2
+
 설치가 필요한 라이브러리는 다음과 같습니다.
 
 python-ce, beautifulsoup4, html5lib, urllib3
