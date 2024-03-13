@@ -1,4 +1,4 @@
-# T.F Lab 정기/단체 프로젝트 Smart Mirror 소프트웨어
+# T.F Lab - Smart Mirror 소프트웨어
 
 ![T.F Lab](/i/tf_dot_text_logo.svg)
 
@@ -19,11 +19,11 @@
 
 ## 개요
 
-T.F Lab의 스마트미러 하드웨어에 탑재될 소프트웨어.
+T.F Lab의 스마트미러 하드웨어의 소프트웨어이다.
 
 개발환경: Windows 11
 
-실행환경: Ubuntu 23.10
+실행환경: Ubuntu 23.10 ( Raspberry Pi 4B 4GB )
 
 ***
 
