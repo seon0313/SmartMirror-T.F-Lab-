@@ -52,7 +52,7 @@ class App:
         App.dt = 1/App.setting['fps']
         size = self.sc.get_size()
 
-        clock = Clock(time_format=App.setting['time-24-12'])
+        clock = Clock()
 
         weather_widget = WeatherWidget()
         news_widget = NewsWidget()

@@ -3,12 +3,12 @@ from ui.Text import Text
 import threading
 
 class Clock:
-    def __init__(self, time_format=12):
+    def __init__(self):
         from m.App import App
         self.font = App.getFont('clock-font-size')
         self.color = App.theme['clock-color']
         self.time = time.time()
-        self.format = time_format
+        self.format = App.setting['time-24-12']
 
         #self.thread_ = threading.Thread(target=self.time_thread,daemon=True)
         #self.thread_.start()
