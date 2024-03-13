@@ -74,7 +74,9 @@ T.F Lab의 스마트미러 하드웨어에 탑재될 소프트웨어.
 
 ## 설치
 Python 3를 다운로드 합니다.
+
 권장: Python 3.6 >=
+
 테스트 됨: Python 3.12, Python 3.12.2
 
 설치가 필요한 라이브러리는 다음과 같습니다.
@@ -84,7 +86,7 @@ python-ce, beautifulsoup4, html5lib, urllib3
 다음 명령어로 라이브러리를 설치할수있습니다.
 
 ```
-pip install <라미브러리 명>
+pip install <라이브러리 명>
 pip3 install <라이브러리 명>
 python -m pip install <라이브러리 명>
 python3 -m pip isntall <라이브러리 명>
