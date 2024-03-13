@@ -84,7 +84,7 @@ python-ce, beautifulsoup4, html5lib, urllib3
 다음 명령어로 라이브러리를 설치할수있습니다.
 
 ```
-pip install <라미브러리 명>
+pip install <라이브러리 명>
 pip3 install <라이브러리 명>
 python -m pip install <라이브러리 명>
 python3 -m pip isntall <라이브러리 명>
