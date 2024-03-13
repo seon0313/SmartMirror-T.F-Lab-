@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
-     inkscape:zoom="1.4142135"
-     inkscape:cx="180.31224"
-     inkscape:cy="61.871846"
+     inkscape:zoom="1.9999999"
+     inkscape:cx="327.50001"
+     inkscape:cy="158.75001"
      inkscape:window-width="2240"
      inkscape:window-height="1294"
      inkscape:window-x="-11"
@@ -123,38 +123,17 @@
        cx="76"
        cy="36"
        r="6" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:GyeonggiTitleVOTF;-inkscape-font-specification:GyeonggiTitleVOTF;fill:#ffffff;stroke-width:0.264999"
-       x="9.2591686"
-       y="52.524727"
-       id="text5"><tspan
-         sodipodi:role="line"
-         id="tspan5"
-         style="font-size:10.5833px;stroke-width:0.265"
-         x="9.2591686"
-         y="52.524727">L</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:GyeonggiTitleVOTF;-inkscape-font-specification:GyeonggiTitleVOTF;fill:#ffffff;stroke-width:0.264999"
-       x="45.354168"
-       y="52.524727"
-       id="text5-4"><tspan
-         sodipodi:role="line"
-         id="tspan5-9"
-         style="font-size:10.5833px;stroke-width:0.265"
-         x="45.354168"
-         y="52.524727">A</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:GyeonggiTitleVOTF;-inkscape-font-specification:GyeonggiTitleVOTF;fill:#ffffff;stroke-width:0.264999"
-       x="81.586166"
-       y="52.524727"
-       id="text5-4-5"><tspan
-         sodipodi:role="line"
-         id="tspan5-9-5"
-         style="font-size:10.5833px;stroke-width:0.265"
-         x="81.586166"
-         y="52.524727">B</tspan></text>
+    <path
+       d="m 9.9999064,44.999837 v 6.06423 c 0,1.090078 0.4656296,1.460892 1.5451256,1.460892 h 3.280936 v -1.206644 h -2.75177 c -0.402165,0 -0.507979,-0.15871 -0.507979,-0.486792 v -5.831686 z"
+       style="font-size:10.5833px;font-family:GyeonggiTitleVOTF;-inkscape-font-specification:GyeonggiTitleVOTF;fill:#ffffff;stroke-width:0.264999"
+       id="path3" />
+    <path
+       d="m 48.126778,44.999837 -2.667021,7.525122 h 1.577165 l 0.539502,-1.598352 h 2.868559 l 0.529167,1.598352 h 1.566312 l -2.593123,-7.525122 z m 0.868164,1.365292 1.100708,3.471622 h -2.191081 z"
+       style="font-size:10.5833px;font-family:GyeonggiTitleVOTF;-inkscape-font-specification:GyeonggiTitleVOTF;fill:#ffffff;stroke-width:0.264999"
+       id="path2" />
+    <path
+       d="m 83.8724,44.999837 c -1.079496,0 -1.545642,0.370814 -1.545642,1.460893 v 4.603337 c 0,1.090078 0.466146,1.460892 1.545642,1.460892 h 1.312065 c 1.555743,0 2.815332,-0.444796 2.815332,-2.148706 0,-0.931329 -0.317463,-1.54525 -1.280542,-1.672249 0.867829,-0.243416 1.100708,-0.878048 1.100708,-1.735295 0,-1.629826 -1.248923,-1.968872 -2.730583,-1.968872 z m 0.507979,1.206645 h 0.676961 c 0.814914,0 1.164271,0.28567 1.164271,0.973584 0,0.67733 -0.349357,0.952397 -1.164271,0.952397 h -1.16427 v -1.439189 c 0,-0.328082 0.08514,-0.486792 0.487309,-0.486792 z m -0.487309,3.132625 h 1.281059 c 0.83608,0 1.206128,0.232981 1.206128,0.942062 0,0.751413 -0.391546,1.037146 -1.280542,1.037146 h -0.719336 c -0.296332,0 -0.487309,-0.116336 -0.487309,-0.444418 z"
+       style="font-size:10.5833px;font-family:GyeonggiTitleVOTF;-inkscape-font-specification:GyeonggiTitleVOTF;fill:#ffffff;stroke-width:0.264999"
+       id="path1" />
   </g>
 </svg>
